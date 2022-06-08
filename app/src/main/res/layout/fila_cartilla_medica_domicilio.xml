@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1">
+            <TextView android:id="@+id/idFila"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView android:id="@+id/linea1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Linea1"
+                android:layout_weight="1"
+                android:fontFamily="roboto"
+                android:textSize="12dp"
+                android:textColor="@color/colorFuenteNegra"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView android:id="@+id/linea2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Linea2"
+                android:layout_weight="1"
+                android:fontFamily="roboto"
+                android:textSize="12dp"
+                android:textColor="@color/colorFuenteNegra"
+                android:layout_marginLeft="10dp"/>
+            <View
+                android:id="@+id/espacio"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"></View>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btnMapa"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/map_point_brown"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+            android:id="@+id/btnTelefono"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/telefono_sin_fondo"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:minWidth="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_yellow_dialog"
+    android:layout_margin="10dp" android:padding="18dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/imgCargando"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/lblMsg"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+            android:text="Buscando prestador"
+            android:fontFamily="sans-serif"
+            android:textSize="16dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#130657"/>
+    </LinearLayout>
+</LinearLayout>

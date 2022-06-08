@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:visibility="visible">
+        <!-- <ImageView
+            android:id="@+id/imgCargando"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:layout_marginLeft="60dp"/>-->
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Buscando teléfonos de emergencia"
+            android:textColor="@color/colorFuente"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Buscando teléfonos de emergencia"
+            android:textColor="@color/colorFuente"
+
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Buscando teléfonos de emergencia"
+            android:textColor="@color/colorFuente"
+
+            android:textSize="14dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:text="Buscando teléfonos de emergencia"
+            android:textColor="@color/colorFuente"
+
+            android:textSize="14dp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/linear5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Buscando teléfonos de emergencia"
+                android:textColor="@color/colorFuente"
+                android:layout_gravity="center_vertical|center_horizontal"
+
+                android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/linear6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscando teléfonos de emergencia"
+            android:textColor="@color/colorFuente"
+
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/activeInactiveIcom"
+            android:visibility="gone"
+            android:src="@drawable/round_green_btn"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:textColor="@color/colorFuente"
+            android:text="Seleccionar Especialidad"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginLeft="12dp"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".9"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:longClickable="false"
+                android:text="Estado de afiliación"
+                android:textColor="#130657"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/selectedBrown"
+            android:layout_marginBottom="45dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:id="@+id/listaEstado"
+                android:scrollbarStyle="outsideOverlay"
+                android:divider="@null"
+                >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/side_estado_afiliacion" />
+</RelativeLayout>

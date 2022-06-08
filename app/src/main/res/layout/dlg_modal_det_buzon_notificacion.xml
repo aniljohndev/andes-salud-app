@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/round_yellow_dialog"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_borde_sup_brown"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:src="@drawable/andeslogo"
+            android:layout_marginTop="-7dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="-7dp"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="3dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtTitulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:text="Raul Lucania"
+                android:layout_marginLeft="5dp"
+                android:textColor="#130657"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txtTexto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="sans-serif"
+                android:text="Raul Lucania"
+                android:layout_marginLeft="5dp"
+                android:textColor="#130657"/>
+
+            <WebView android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </WebView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

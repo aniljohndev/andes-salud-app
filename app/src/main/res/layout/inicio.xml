@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/defaultWindowBackground"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btnSoyAfiliado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/soy_afiliado_white_circle" />
+
+            <ImageView
+                android:id="@+id/btnSoyPrestador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-46dp"
+                android:layout_marginTop="-40dp"
+                android:src="@drawable/soy_prestador_white_circle" />
+
+            <ImageView
+                android:id="@+id/imvQuiero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-40dp"
+                android:src="@drawable/quiero_sociarme_white_circle"
+                android:visibility="gone"/>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frg_sociales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

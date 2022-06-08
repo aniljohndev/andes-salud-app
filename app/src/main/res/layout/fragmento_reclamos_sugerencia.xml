@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".9"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:longClickable="false"
+                android:text="Reclamos o consultas"
+                android:textColor="@color/colorFuente"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:weightSum="100"
+                android:paddingBottom="30dp">
+                <LinearLayout
+                    android:id="@+id/lnAfiliadoResultados"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/selectedBrown"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/opcionesReclamoSugerencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="100dp">
+
+                        <RadioButton
+                            android:id="@+id/rdoReclamo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Reclamo               "
+                            android:layoutDirection="rtl"
+                            android:textAlignment="textStart"
+                            android:layout_gravity="start"
+                            android:textStyle="bold"
+                            android:layout_marginRight="40dp"
+                            android:textColor="@color/colorFuente"
+                            android:textSize="14sp"
+                            android:buttonTint="@color/colorFuenteNegra"/>
+
+                        <RadioButton
+                            android:id="@+id/rdoSugerencia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:text="Consulta          "
+                            android:layoutDirection="rtl"
+                            android:textAlignment="textStart"
+                            android:layout_gravity="start"
+                            android:textStyle="bold"
+                            android:layout_marginRight="40dp"
+                            android:textColor="@color/colorFuente"
+                            android:textSize="14sp"
+                            android:buttonTint="@color/colorFuenteNegra"/>
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/selectedBrown"
+                    android:layout_marginTop="5dp"
+                    android:divider="@null">
+                    <EditText
+                        android:id="@+id/txtReclamoSugerencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textMultiLine"
+                        android:lines="10"
+                        android:minLines="10"
+                        android:gravity="top|left"
+                        android:scrollbars="vertical"
+                        android:layout_marginLeft="90dp"
+                        android:hint="Escribir aqui"
+                        android:textSize="14dp"
+                        android:background="@null"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/btnEnviar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/next_circled" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ENVIAR" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/side_reclamo_sugerencia" />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/selectedBrown">
+
+    <LinearLayout
+        android:id="@+id/lnCartilla"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp">
+        <TextView android:id="@+id/idFila"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <ImageView
+            android:id="@+id/imgExpandirZona"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/next_circled"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="12dp"
+            android:rotation="90"/>
+        <TextView android:id="@+id/linea1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Linea1"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorFuente"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnFarmacias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:background="@color/colorFondo">
+    </LinearLayout>
+</LinearLayout>

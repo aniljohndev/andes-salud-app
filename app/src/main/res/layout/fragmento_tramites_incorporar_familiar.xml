@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".9"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:longClickable="false"
+                android:text="Incorporar familiar"
+                android:textColor="@color/colorFuente"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+                <LinearLayout
+                    android:id="@+id/lnParentesco"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="1"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorFuente"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seleccionar \nParentesco"
+                        android:textColor="@color/colorFuente"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnParentescoResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/selectedBrown"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:id="@+id/lblParentescoSeleccionado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold"
+                        android:text="Seleccionar parentesco"
+                        android:layout_marginLeft="12dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/listaParentesco"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:divider="@null">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnDatosFam"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/lblDatosFamPaso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="2"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorFuenteDesactivada"/>
+
+                    <TextView
+                        android:id="@+id/lblDatosFam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Datos del \nFamiliar"
+                        android:textColor="@color/colorFuenteDesactivada"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnDatosFamResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/selectedBrown"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:id="@+id/lblDatosFamSeleccionado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold"
+                        android:text="Datos del familiar"
+                        android:layout_marginLeft="12dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnDatosFamiliar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/selectedBrown"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NOMBRE Y APELLIDO:"
+                        android:textColor="@color/colorFuente"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:id="@+id/txtApellNomb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bottom_border_background"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/lnFechaNacimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="FECHA DE NACIMENTO: "
+                            android:textColor="@color/colorFuente"/>
+
+                        <TextView
+                            android:id="@+id/txtFecNac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="---"
+                            android:textColor="@color/colorFuente"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CUIL: "
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/colorFuente"/>
+
+                        <EditText
+                            android:id="@+id/txtCuil"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/edittext_bottom_border_background"
+                            android:maxLength="12"
+                            android:inputType="number"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NACIONALIDAD: "
+                            android:textColor="@color/colorFuente"/>
+
+                        <Spinner
+                        android:id="@+id/spinnerNacionalidad"
+                        style="@style/spinner_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioSexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEXO: "
+                            android:textColor="@color/colorFuente"/>
+
+                        <RadioButton
+                            android:id="@+id/optFemenino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="FEMENINO"
+                            android:textSize="10sp"
+                            />
+
+                        <RadioButton
+                            android:id="@+id/optMasculino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MASCULINO"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ESTADO CIVIL: "
+                            android:textColor="@color/colorFuente"/>
+
+                        <Spinner
+                            android:id="@+id/spinnerEstadoCivil"
+                            style="@style/spinner_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/estado_civil_array" />
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioEstudia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="60dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¿ESTUDIA?: "
+                            android:textColor="@color/colorFuente"/>
+
+                        <RadioButton
+                            android:id="@+id/optEstudiaSi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:checked="false"
+                            android:text="SI"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/optEstudiaNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NO"
+                            android:textSize="10sp" />
+                    </RadioGroup>
+                    <LinearLayout
+                        android:id="@+id/lnDatosFamCheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:layout_marginBottom="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_green_check">
+
+                        </ImageView>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnAdjuntarDocumentacion"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/lblAjuntarDocumentacionPaso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="3"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/lblAdjuntarDocumentacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adjuntar \nDocument." />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnAdjuntarDocumentacionResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@color/selectedBrown"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="3"
+                        android:textColor="@color/colorFuente"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="60dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/lblDatosAdjuntarDocSeleccionado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold"
+                        android:text="Datos del familiar"
+                        android:layout_marginLeft="12dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnCompletoImagenDNI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/selectedBrown"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Imagen del DNI"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFuente"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnImagenDNIBotontes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/imvFromGalleryDNI"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/ic_from_gallery"/>
+                        <ImageView
+                            android:id="@+id/imvTakePhotoDNI"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:src="@drawable/ic_take_photo"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnFotosDNI"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_yellow_dialog_bg_brown"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="20dp">
+                        <com.jama.carouselview.CarouselView
+                            android:id="@+id/carouselViewDNI"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:enableSnapping="true"
+                            app:scaleOnScroll="false"
+                            app:setAutoPlay="true"
+                            app:setAutoPlayDelay="3000"
+                            app:carouselOffset="center"
+                            app:indicatorAnimationType="drop"
+                            app:indicatorRadius="5"
+                            app:indicatorPadding="5"
+                            app:indicatorSelectedColor="@color/colorAccent"
+                            app:indicatorUnselectedColor="@color/colorPrimary"
+                            app:size="10"
+                            app:spacing="10"
+                            app:resource="@layout/image_carousel_item"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnCompletoImagenConstanciaCUIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/selectedBrown"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Constancia de CUIL"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFuente"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnImagenConsCUILBotontes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/imvFromGalleryConstanciaCUIL"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/ic_from_gallery"/>
+                        <ImageView
+                            android:id="@+id/imvTakePhotoConstanciaCUIL"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:src="@drawable/ic_take_photo"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnFotosConstanciaCUIL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_yellow_dialog_bg_brown"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="20dp">
+                        <com.jama.carouselview.CarouselView
+                            android:id="@+id/carouselViewConstanciaCUIL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:enableSnapping="true"
+                            app:scaleOnScroll="false"
+                            app:setAutoPlay="true"
+                            app:setAutoPlayDelay="3000"
+                            app:carouselOffset="center"
+                            app:indicatorAnimationType="drop"
+                            app:indicatorRadius="5"
+                            app:indicatorPadding="5"
+                            app:indicatorSelectedColor="@color/colorAccent"
+                            app:indicatorUnselectedColor="@color/colorPrimary"
+                            app:size="10"
+                            app:spacing="10"
+                            app:resource="@layout/image_carousel_item"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnCompletoImagenTercera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/selectedBrown"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp">
+
+                        <TextView
+                            android:id="@+id/lblImagenTercera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Imágen del DNI"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFuente"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnImagenTerceraBotontes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/imvFromGalleryTercera"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/ic_from_gallery"/>
+                        <ImageView
+                            android:id="@+id/imvTakePhotoTercera"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:src="@drawable/ic_take_photo"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnFotosTercera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_yellow_dialog_bg_brown"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="20dp">
+                        <com.jama.carouselview.CarouselView
+                            android:id="@+id/carouselViewTercera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:enableSnapping="true"
+                            app:scaleOnScroll="false"
+                            app:setAutoPlay="true"
+                            app:setAutoPlayDelay="3000"
+                            app:carouselOffset="center"
+                            app:indicatorAnimationType="drop"
+                            app:indicatorRadius="5"
+                            app:indicatorPadding="5"
+                            app:indicatorSelectedColor="@color/colorAccent"
+                            app:indicatorUnselectedColor="@color/colorPrimary"
+                            app:size="10"
+                            app:spacing="10"
+                            app:resource="@layout/image_carousel_item"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnCompletoImagenCuarta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/selectedBrown"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp">
+
+                        <TextView
+                            android:id="@+id/lblImagenCuarta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Imágen del DNI"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFuente"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnImagenCuartoBotontes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/imvFromGalleryCuarta"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/ic_from_gallery"/>
+                        <ImageView
+                            android:id="@+id/imvTakePhotoCuarta"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:src="@drawable/ic_take_photo"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnFotosCuarta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_yellow_dialog_bg_brown"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="20dp">
+                        <com.jama.carouselview.CarouselView
+                            android:id="@+id/carouselViewCuarta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:enableSnapping="true"
+                            app:scaleOnScroll="false"
+                            app:setAutoPlay="true"
+                            app:setAutoPlayDelay="3000"
+                            app:carouselOffset="center"
+                            app:indicatorAnimationType="drop"
+                            app:indicatorRadius="5"
+                            app:indicatorPadding="5"
+                            app:indicatorSelectedColor="@color/colorAccent"
+                            app:indicatorUnselectedColor="@color/colorPrimary"
+                            app:size="10"
+                            app:spacing="10"
+                            app:resource="@layout/image_carousel_item"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnCompletoImagenQuinta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:visibility="visible"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/selectedBrown"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp">
+
+                        <TextView
+                            android:id="@+id/lblImagenQuinta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:text="Imágen del DNI"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorFuente"
+                            android:textSize="18sp"
+                            android:layout_marginLeft="60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnImagenQuintoBotontes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:focusable="true"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/imvFromGalleryQuinta"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/ic_from_gallery"/>
+                        <ImageView
+                            android:id="@+id/imvTakePhotoQuinta"
+                            android:layout_width="60.0dip"
+                            android:layout_height="60.0dip"
+                            android:src="@drawable/ic_take_photo"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnFotosQuinta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_yellow_dialog_bg_brown"
+                        android:paddingTop="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="20dp">
+                        <com.jama.carouselview.CarouselView
+                            android:id="@+id/carouselViewQuinta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:enableSnapping="true"
+                            app:scaleOnScroll="false"
+                            app:setAutoPlay="true"
+                            app:setAutoPlayDelay="3000"
+                            app:carouselOffset="center"
+                            app:indicatorAnimationType="drop"
+                            app:indicatorRadius="5"
+                            app:indicatorPadding="5"
+                            app:indicatorSelectedColor="@color/colorAccent"
+                            app:indicatorUnselectedColor="@color/colorPrimary"
+                            app:size="10"
+                            app:spacing="10"
+                            app:resource="@layout/image_carousel_item"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnBotonesConfirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/btnSiguiente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/next_circled" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/side_incorporar_familiares" />
+</RelativeLayout>

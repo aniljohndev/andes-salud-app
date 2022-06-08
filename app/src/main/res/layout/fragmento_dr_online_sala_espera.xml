@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".9"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:longClickable="false"
+                android:text="Dr. Online"
+                android:textColor="@color/colorFuente"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1e3c0"
+            android:layout_marginBottom="45dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="65dp"
+                    android:clickable="false"
+                    android:layout_marginTop="20dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:longClickable="false"
+                    android:text="Sala de espera"
+                    android:textColor="@color/colorFuente"
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="95dp"
+                    android:clickable="false"
+                    android:layout_marginTop="20dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:longClickable="false"
+                    android:text="¡NO TE VAYAS! Permanecé en esta sala hasta que inicie la videoconsulta. Gracias"
+                    android:textColor="@color/colorFuente"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:paddingLeft="65dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/dr_online_sala_espera"
+                >
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:longClickable="false"
+                        android:text="Profesional:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/lblProfesional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold|italic"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:longClickable="false"
+                        android:text="Profesional:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="11dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:longClickable="false"
+                        android:text="Estado:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/lblEstado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold|italic"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:longClickable="false"
+                        android:text="Profesional:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="11dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="50dp">
+
+                    <TextView
+                        android:id="@+id/txtMotivo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:longClickable="false"
+                        android:text="Motivo:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/lblMotivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold|italic"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:longClickable="false"
+                        android:text="Profesional:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="11dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="50dp">
+
+                    <TextView
+                        android:id="@+id/txtCantPacientes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:longClickable="false"
+                        android:text="Pacientes que tenes por delante:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="12dp" />
+                    <TextView
+                        android:id="@+id/lblCantPacientes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold|italic"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:longClickable="false"
+                        android:text="Profesional:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="11dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="60dp">
+
+                    <ImageView
+                        android:id="@+id/btnJuego"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/btn_juegos"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnBotonesConfirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/btnCancelarAtencion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/close_circled"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/side_soy_prestador" />
+</RelativeLayout>

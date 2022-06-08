@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:minWidth="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_yellow_dialog"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_borde_sup_brown"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/soy_prestador_white_circle"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="-15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="querido afiliado"
+                android:fontFamily="sans-serif"
+                android:textSize="12dp"
+                android:textColor="@color/colorFuente"/>
+            <TextView
+                android:id="@+id/txtPrestador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Cod. Autoriz."
+                android:fontFamily="sans-serif"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorFuente"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

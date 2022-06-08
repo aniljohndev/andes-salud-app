@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/selectedBrown">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".85">
+        <TextView android:id="@+id/idFila"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView android:id="@+id/linea1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linea1"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:textColor="#130657"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="80dp"/>
+        <TextView android:id="@+id/linea2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Linea2"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="80dp"/>
+        <TextView android:id="@+id/linea3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Linea2"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="80dp"/>
+        <TextView android:id="@+id/linea4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Linea2"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".15">
+        <ImageView
+            android:id="@+id/btnTelefono"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/telefono_llamar"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/btnMapa"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/map_point_brown"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/selectedBrown">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="50dp">
+        <TextView android:id="@+id/idFila"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <TextView android:id="@+id/linea1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linea1"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:textColor="@color/colorFuente"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="70dp"/>
+        <TextView android:id="@+id/linea2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linea2"
+            android:fontFamily="sans-serif"
+            android:textSize="10dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/colorFuente"/>
+        <TextView android:id="@+id/linea3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Linea2"
+            android:fontFamily="sans-serif"
+            android:textSize="10dp"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/colorFuente"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_weight=".1"
+        android:buttonTint="#fff"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="-50dp"
+        android:checked="true"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>

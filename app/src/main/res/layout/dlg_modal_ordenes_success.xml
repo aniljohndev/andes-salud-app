@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="280dp"
+    android:background="@drawable/round_dialog_bg"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:inputType="textMultiLine"
+        android:text="La solicitud ingreso correctamente.\nVerifique en el Buzon de Avisos."
+        android:textColor="#130657"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp"
+        android:layout_gravity="end"
+        android:src="@drawable/inbox_1"/>
+</LinearLayout>

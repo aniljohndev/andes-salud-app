@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragmentos.fragmento_pharmacy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".9"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:longClickable="false"
+                android:text="FARMACIA"
+                android:textColor="@color/colorFuente"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <LinearLayout
+                    android:id="@+id/lnAfiliado"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="1"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seleccionar Afiliado"
+                        android:textColor="@color/colorFuente" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnAfiliadoResultadoss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/selectedBrown"
+                    android:gravity="center_vertical"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="5dp"
+                        android:text="1"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblAfiliadoSeleccionados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:text="Seleccionar Afiliado"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/listaAfiliado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:orientation="vertical"></LinearLayout>
+
+                <!--     <ListView
+                         android:id="@+id/lstGrupoFam"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_gravity="left|start"
+                         android:divider="@null" />
+     -->     <ListView
+                android:id="@+id/lstEspecialiad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|start"
+                android:background="@color/selectedBrown"
+                android:divider="@null"
+                android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/secondLayoutNumber"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/lblSeleccionarEspecialidadPaso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="2"
+                        android:textColor="@color/colorFuenteDesactivada"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/lblSeleccionarEspecialidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adjunter \Receta Medica"
+                        android:textColor="@color/colorFuenteDesactivada" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secondlayoutpharmacyly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/selectedBrown"
+                        android:gravity="center_vertical"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                       >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="5dp"
+                            android:text="2"
+                            android:textColor="@color/colorFuente"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lblEspecialidadSeleccionado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="start"
+                            android:text="Adjunter Receta Medica "
+                            android:textColor="@color/colorFuente"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                       >
+
+                        <ImageView
+                            android:id="@+id/imagefromgallery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_from_gallery" />
+
+                        <ImageView
+                            android:id="@+id/imagefromcamera"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_take_photo" />
+
+                    </LinearLayout>
+                  <!--  <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/selectedImageRecyclerview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:listitem="@layout/image_carousel_item"
+                        android:layout_gravity="start"
+                        />
+-->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/parent_linear_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="160dp"
+                                android:padding="10dp"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/iv_add_image"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    android:src="@android:drawable/ic_input_add"
+                                    android:background="@android:color/background_light"
+                                    android:inputType="phone"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lstEspecialidades"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|start"
+                    android:divider="@null"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/lnPrestador"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/lblSeleccionarPrestadorPaso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="3"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/lblSeleccionarPrestador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmacion \nPedido y domicilio" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnPrestadorResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/selectedBrown"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="5dp"
+                        android:text="3"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lblPrestadorSeleccionado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:text="Confirmacion Pedido y domicilio"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/map3rdphaselnlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="¿DONDE QUERES QUE TE LLEVEMOS TU MEDICAMENTO?"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="5dp"
+                        android:text="1. Escribe la direccion  exacta"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/exactlocation1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:singleLine="true"
+                        android:background="#ffffff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="5dp"
+                        android:text="2. Escribe tu celular:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dateselect2"
+                        style="@style/TextAppearance.AppCompat.Body2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/button_border_little_round"
+                        android:foreground="?selectableItemBackground"
+                        android:text="Select Date"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/selecteddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_80sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:singleLine="true"
+                        android:background="#ffffff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginRight="5dp"
+                        android:text="3. Ubica el indicador en tu location:"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/map_layout"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_140sdp"
+                        android:layout_margin="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <fragment
+                            android:id="@+id/fragment_mapFragmentId_activity_get_location_filter1"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/add_location_map"
+                    style="@style/TextAppearance.AppCompat.Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/button_border_little_round"
+                    android:foreground="?selectableItemBackground"
+                    android:text="Add Location"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_15ssp" />
+
+                <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                    android:visibility="gone"
+                    android:id="@+id/submit_button"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border_little_round"
+                    android:foreground="?selectableItemBackground"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    app:spinning_bar_width="4dp"
+                    app:spinning_bar_color="#FFF"
+                    app:spinning_bar_padding="6dp"/>
+                <!--<ListView
+                    android:id="@+id/lstPrestador"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|start"
+                    android:divider="@null" />
+
+                <LinearLayout
+                    android:id="@+id/lnBotonesConfirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/btnSiguiente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/next_circled" />
+                </LinearLayout>-->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ordenes_left_side" />
+</RelativeLayout>

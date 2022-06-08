@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnMsgTotal"
+    android:layout_width="match_parent"
+    android:minWidth="280dp"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_dialog_bg"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/lblMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No se puede mostrar el mensaje."
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#130657"/>
+    <ImageView
+        android:id="@+id/btnCerrar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_red_cross"
+        android:visibility="visible"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/lnChkSeccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/chkSeccion"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:buttonTint="#130657"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/lblChkSeccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nombreCartilla"
+            android:textColor="@color/colorFuente"
+            android:textSize="12dp"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+</LinearLayout>

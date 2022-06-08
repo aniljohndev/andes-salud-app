@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentos.fragmento_principal">
+
+    <RelativeLayout
+        android:id="@+id/pantallaTotal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFondo">
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/imPharmacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:src="@drawable/icono_ordenes_estudios_medicos"
+            />
+        <ImageView
+            android:id="@+id/smileface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smileface"
+            android:layout_centerInParent="true"
+            />
+
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@+id/arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:arc_axisRadius="120dp"
+            app:arc_freeAngle="false"
+            app:arc_origin="center"
+            app:arc_radius="168dp"
+            app:arc_reverseAngle="false">
+
+            <ImageView
+                android:id="@+id/imvOrdenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icono_ordenes_estudios_medicos"
+                app:arc_origin="center" />
+
+            <ImageView
+                android:id="@+id/imvEmergencias"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/white_circle_emergencias"
+                app:arc_origin="center" />
+
+            <ImageView
+                android:id="@+id/imvEstudiosMedicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/estudios_medicos"
+                android:visibility="gone"
+                app:arc_origin="center" />
+
+            <ImageView
+                android:id="@+id/imvCredenCiales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icono_credencial_virtual"
+                app:arc_origin="center" />
+
+            <ImageView
+                android:id="@+id/imvTramites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tramites"
+                app:arc_origin="center" />
+
+            <ImageView
+                android:id="@+id/imvTurnos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/turnos_white_circle"
+                app:arc_origin="center" />
+
+            <ImageView
+                android:id="@+id/imvCatilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/catilla"
+                app:arc_origin="center" />
+
+            <ImageView
+                android:id="@+id/imvDrOnline"
+                adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/dr_online_circle"
+                android:visibility="visible"
+                app:arc_origin="center" />
+        </com.ogaclejapan.arclayout.ArcLayout>
+    </RelativeLayout>
+</FrameLayout>

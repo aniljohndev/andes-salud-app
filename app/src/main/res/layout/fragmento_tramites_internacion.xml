@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".9"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:longClickable="false"
+                android:text="Internación"
+                android:textColor="@color/colorFuente"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+                <LinearLayout
+                    android:id="@+id/lnAfiliado"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="1"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorFuente"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seleccionar \nAfiliado"
+                        android:textColor="@color/colorFuente"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnAfiliadoResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/selectedBrown"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:id="@+id/lblAfiliadoSeleccionado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold"
+                        android:text="Seleccionar Afiliado"
+                        android:layout_marginLeft="12dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/listaAfiliado"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:divider="@null">
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnTipoInternacion"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/lblTipoInternacionPaso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="2"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:id="@+id/lblSelecionarTipoInternacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seleccionar \nTipo de\nInternacion"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnTipoInternacionResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/selectedBrown"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:id="@+id/lblTipoInternacionSeleccionado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold"
+                        android:text="Seleccionar tipo de internación"
+                        android:layout_marginLeft="12dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/listaTipoInternacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:divider="@null">
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnAdjuntarImagenes"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/lblAjuntarImagenesPaso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="3"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/lblAdjuntarImagenes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adjuntar \nPedido\nMédico" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnAdjuntarImagenesResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@color/selectedBrown"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="3"
+                        android:textColor="@color/colorFuente"
+                        android:layout_marginRight="5dp"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="60dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/lblAdjuntarImagenesSeleccionado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left"
+                        android:text="Adjuntar pedido médico"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+
+
+    <!--            <LinearLayout
+                    android:id="@+id/lnDatosContacto"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/oval_brown_selected"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/lblDatosDeContacoPaso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="2"
+                        android:textSize="24sp"/>
+
+                    <TextView
+                        android:id="@+id/lblSelecionarTipoInternacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seleccionar \nTipo de\nInternacion"
+                        />
+                </LinearLayout>
+    -->
+     <!--           <LinearLayout
+                    android:id="@+id/lnTipoInternacionResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/selectedBrown"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="2"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorFuente"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="60dp"/>
+
+                    <TextView
+                        android:id="@+id/lblTipoInternacionSeleccionado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorFuente"
+                        android:textStyle="bold"
+                        android:text="Seleccionar tipo de internación"
+                        android:layout_marginLeft="12dp"/>
+                </LinearLayout>
+     -->           <LinearLayout
+                    android:id="@+id/listaTipoInternacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:divider="@null">
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/lnBotonesImagenes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/imvFromGallery"
+                        android:layout_width="60.0dip"
+                        android:layout_height="60.0dip"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_from_gallery"/>
+                    <ImageView
+                        android:id="@+id/imvTakePhoto"
+                        android:layout_width="60.0dip"
+                        android:layout_height="60.0dip"
+                        android:src="@drawable/ic_take_photo"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnFotos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_yellow_dialog_bg_brown"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="20dp">
+                    <com.jama.carouselview.CarouselView
+                        android:id="@+id/carouselView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:enableSnapping="true"
+                        app:scaleOnScroll="false"
+                        app:setAutoPlay="true"
+                        app:setAutoPlayDelay="3000"
+                        app:carouselOffset="center"
+                        app:indicatorAnimationType="drop"
+                        app:indicatorRadius="5"
+                        app:indicatorPadding="5"
+                        app:indicatorSelectedColor="@color/colorAccent"
+                        app:indicatorUnselectedColor="@color/colorPrimary"
+                        app:size="10"
+                        app:spacing="10"
+                        app:resource="@layout/image_carousel_item"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnBotonesConfirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/btnSiguiente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/next_circled" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/side_interacion" />
+</RelativeLayout>

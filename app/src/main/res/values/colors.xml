@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#289083</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="defaultWindowBackground">#f8f0dd</color>
+    <color name="selectedBrown">#f1e3c0</color>
+    <color name="selectedYellow">#fcec97</color>
+    <color name="app_rhino">#262D4E</color>
+    <color name="verdeAutorizado">#00D748</color>
+    <color name="barraBuzonAmarilla">#ffff99</color>
+    <color name="barraBuzonAzul">#0039e6</color>
+    <color name="barraBuzonGris">#c3c3c3</color>
+    <color name="barraBuzonMarron">#660033</color>
+    <color name="barraBuzonRojo">#cc0000</color>
+    <color name="barraBuzonVerde">#00cc99</color>
+    <color name="barraBuzonAmarilloNotificacion">#e8b03a</color>
+    <color name="colorFondo">#f8f0dd</color>
+    <color name="colorNotificacion">#FFAA55</color>
+    <color name="colorFuente">#282e52</color>
+    <color name="colorFuenteRoja">#b51702</color>
+    <color name="colorFuenteNegra">#383737</color>
+    <color name="colorFuenteDesactivada">#7a7a7a</color>
+
+</resources>

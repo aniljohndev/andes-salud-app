@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "938841639999",
+    "firebase_url": "https://andesfcm.firebaseio.com",
+    "project_id": "andesfcm",
+    "storage_bucket": "andesfcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938841639999:android:b51543102ed89add",
+        "android_client_info": {
+          "package_name": "ar.com.andessalud.andes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938841639999-lfj1fm8phm8h5k8i8dgtr6i85d7qijpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9bZW62ZWEdOcWBhff_or8yDIv9JfflYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

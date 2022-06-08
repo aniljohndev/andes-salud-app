@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">ANDES Salud</string>
+    <string name="srvLocProduccion">http://srvloc.andessalud.com.ar/WebServicePrestacional.asmx/</string>
+<!--        <string name="srv_localdiscoveritech">https://andessalud.ar/staff-dashboard/api/</string>-->
+
+    <string name="srv_localdiscoveritech">https://discoveritech.org/staff-dashboard/api/</string>
+    <!--    <string name="srv_localdiscoveritech">https://digitalech.com/doctor-panel/api/</string>-->
+
+    <string name="msgErrorConexion">Error de conexión, por favor verifique su conexión a internet.</string>
+    <string name="msgErrorServidor">Error en el servidor, por favor reintente en unos minutos.</string>
+    <string name="msgErrorSinConexion">No hay conexión hacia el servidor, por favor verifique su conexión a internet.</string>
+    <string name="agora_app_id">0f07a2a167374a458dfad2c373e8dc7b</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tiempoMulticlick">1000</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyBAgO0C8C6e7zMJjVrH8SIIIeTQ0m6kQI4
+    </string>
+    <string name="day_hint"><u>mm/dd/yyyy</u></string>
+    <string-array name="estado_civil_array">fra
+        <item>Casado/a</item>
+        <item>Concubinato</item>
+        <item>Convivencia</item>
+        <item>Cónyuge</item>
+        <item>Divorciado/a</item>
+        <item>Separado/a</item>
+        <item>Soltero/a</item>
+        <item>Viudo/a</item>
+        <item>Otro</item>
+    </string-array>
+
+
+    <!--    <string name="app_name">Video Quickstart</string>-->
+    <string name="room_status">status</string>
+    <string name="error_retrieving_access_token">Error retrieving token</string>
+    <string name="permissions_needed">Se necesitan permisos de cámara y micrófono. Permita en la configuración de la aplicación para funciones adicionales.</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="codec_title">Set your preferred audio and video codec. Not all codecs are supported with Group rooms. The media server will fallback to OPUS or VP8 if a preferred codec is not supported.</string>
+    <string name="pref_title_audio_codec">Audio Codec</string>
+    <string name="pref_title_video_codec">Video Codec</string>
+    <string name="sender_bandwidth_constraints">Set sender bandwidth constraints. Zero represents the WebRTC default value which varies by codec.</string>
+    <string name="max_audio_bitrate">Max Audio Bitrate (bits per second)</string>
+    <string name="max_video_bitrate">Max Video Bitrate (bits per second)</string>
+    <string name="vp8_simulcast">VP8 Simulcast</string>
+    <string name="audio_device">Audio Device</string>
+    <string name="room_screen_select_device">Seleccionar salida de audio</string>
+    <string name="register_event">¡Me quiero registrar!</string>
+    <string name="registered">¡Cancelar suscripción!</string>
+    <string name="unregistered">¡Me quiero registrar!</string>
+    <string name="location_select_dialog_message">Select location.</string>
+    <string name="location_gps_dialog_title">GPS Locations</string>
+    <string name="location_gps_turn_on_dialog_message">For a better experience, turn on device location, which uses Google\'s location service.</string>
+    <string name="location_gps_turn_on_dialog_messagesm">To continue, let your device turn on location using Google\'s Location Service.</string>
+    <string name="location_enable_dialog_title">Enable Location</string>
+    <string name="location_enable_dialog_message">Please turn on location settings to view location on a map.</string>
+    <string name="share_location">Share Location</string>
+    <string name="m_ok">OK</string>
+    <string name="activity_location_title">Location</string>
+    <string name="location_empty_dialog_message">Please enter a location for your listing.</string>
+    <string name="activty_country_not_f">Provided location is not listed with any country!</string>
+    <string name="got_it">Got It</string>
+    <string name="location_toast_enter_name">Please enter a place name.</string>
+    <string name="location_toast_select_known_location">Please select known location.</string>
+    <string name="evento">Evento/Cita:</string>
+    <string name="date">Fecha:</string>
+
+
+</resources>

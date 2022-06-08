@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+
+    android:layout_centerInParent="true"
+    android:orientation="horizontal">
+    <TextView android:id="@+id/linea1"
+        android:layout_width="0dp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="Linea1"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="#130657"
+        />
+        <ImageView
+            android:id="@+id/doctorAvailimg"
+            android:layout_width="@dimen/_14sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:src="@drawable/round_green_btn"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textColor="@color/colorFuente" />
+
+
+    </LinearLayout>
+

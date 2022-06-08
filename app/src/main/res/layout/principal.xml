@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pantallaTotal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFondo">
+
+        <LinearLayout
+            android:id="@+id/top_area"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <LinearLayout
+                    android:id="@+id/btnMenu"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:clickable="false"
+                        android:gravity="left"
+                        android:src="@drawable/hamburguesa"
+                        android:visibility="visible" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnLlamadaActiva"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorNotificacion"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Volver a la llamada"
+                        android:textColor="@color/colorFuente"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14dp"
+                        >
+                    </TextView>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnCalender"
+                    android:layout_width="32dp"
+                    android:layout_height="22dp"
+                    android:layout_alignStart="@+id/btnNotificaciones"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_marginStart="-45dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/calnder_icon"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/btnNotificaciones"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/notificacion_transparent"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frg_pantallaActual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"/>
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/smileface"
+            android:layout_centerInParent="true"
+            />
+        <com.ogaclejapan.arclayout.ArcLayout
+            android:id="@+id/arc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:arc_origin="center"
+            app:arc_radius="168dp"
+            app:arc_axisRadius="120dp"
+            app:arc_freeAngle="false"
+            app:arc_reverseAngle="false">
+            <ImageView
+                android:id="@+id/imvOrdenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ordenes"
+                app:arc_origin="center"/>
+            <ImageView
+                android:id="@+id/imvEmergencias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/white_circle_emergencias"
+                app:arc_origin="center"/>
+            <ImageView
+                android:id="@+id/imvEstudiosMedicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/estudios_medicos"
+                app:arc_origin="center"/>
+            <ImageView
+                android:id="@+id/imvCredenCiales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/credenciales"
+                app:arc_origin="center"/>
+            <ImageView
+                android:id="@+id/imvTramites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tramites"
+                app:arc_origin="center"/>
+            <ImageView
+                android:id="@+id/imvCatilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/catilla"
+                app:arc_origin="center"/>
+        </com.ogaclejapan.arclayout.ArcLayout>-->
+
+        <FrameLayout
+            android:id="@+id/frg_sociales"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/drawerPane"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"></com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

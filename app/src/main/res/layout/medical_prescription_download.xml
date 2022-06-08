@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnMsgTotal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_yellow_dialog"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:background="@drawable/medical_pres_header"
+        android:orientation="horizontal"
+>
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/orden_sin_fondo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Prestador"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:textColor="@color/colorFuente"/>
+        <TextView
+            android:id="@+id/cod_auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="B8G0-3A5I4WVQ"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorFuente"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Fec. Venc"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:textColor="@color/colorFuente"/>
+        <TextView
+            android:id="@+id/Fec_venc_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="28/07/2021 11:38:19"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorFuente"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Prestador"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            android:textSize="12dp"
+            android:textColor="@color/colorFuente"/>
+        <TextView
+            android:id="@+id/prestador_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Hospital Italiano DE Mendoza"
+            android:textAllCaps="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorFuente"/>
+    </LinearLayout><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_10sdp"
+
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Domicilio"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="sans-serif"
+        android:textSize="12sp"
+        android:textColor="@color/colorFuente"/>
+    <TextView
+        android:id="@+id/domicilio_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:text="Calle: LATERAL SUR ACCESSO ESTE N': 1070 ,MENDOZA GUALLYUM "
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="sans-serif"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorFuente"/>
+</LinearLayout>
+    
+    
+    <com.google.android.material.button.MaterialButton
+        android:background="@drawable/button_border_little_round"
+        android:layout_width="match_parent"
+        android:text="Download"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_40sdp"/>
+</LinearLayout>

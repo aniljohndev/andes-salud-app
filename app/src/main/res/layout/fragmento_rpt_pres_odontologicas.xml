@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".9"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:fontFamily="sans-serif"
+                android:gravity="left"
+                android:longClickable="false"
+                android:text="Prestaciones odontológicas"
+                android:textColor="@color/colorFuente"
+                android:textSize="19dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp"
+            >
+            <LinearLayout
+                android:id="@+id/lnDesdeFecha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:minHeight="40dp"
+                android:background="@color/selectedBrown">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:padding="5dp"
+                    android:layout_marginLeft="65dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Desde fecha: "
+                        android:gravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="sans-serif"
+                        android:textSize="19dp"
+                        android:textColor="#130657"/>
+                    <TextView
+                        android:id="@+id/txtDesdeFecha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:gravity="left"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="roboto"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnHastaFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:minHeight="40dp"
+                    android:layout_marginLeft="65dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hasta fecha: "
+                            android:gravity="left"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="sans-serif"
+                            android:textSize="19dp"
+                            android:textColor="#130657"/>
+                        <TextView
+                            android:id="@+id/txtHastaFecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="---"
+                            android:gravity="left"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="roboto"
+                            android:textSize="16dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="3dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lnRptPrestOdonto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Armar reporte"
+                        android:background="#fbae16"
+                        android:fontFamily="sans-serif"
+                        android:textSize="16dp"
+                        android:textAlignment="center"
+                        android:paddingTop="15dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#130657"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:focusable="false"
+                        android:longClickable="false"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/side_documentacion" />
+
+</RelativeLayout>
